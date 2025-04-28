@@ -1,0 +1,18 @@
+# Custom mappings in ~/.xkb/symbols/programmer
+
+# Base the layout upon 'se'
+setxkbmap se
+
+# Generate xkb file
+setxkbmap -print > programmer.xkb
+
+# Append symbols to base layout
+Append '+programmer(basic)' to xkb_symbols line
+
+# Load the xkb file
+xkbcomp -I$HOME/.xkb ~/.xkb/programmer.xkb $DISPLAY
+
+# Autoload: add the following lines to ~/.xprofile
+if [ -n "$DISPLAY" ] && command -v xkbcomp >/dev/null 2>&1; then
+    xkbcomp -I$HOME/.xkb ~/.xkb/programmer.xkb "$DISPLAY"
+fi

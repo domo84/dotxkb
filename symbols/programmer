@@ -1,0 +1,13 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    key <AD04>	{ [         r,          R,		backslash,		registered ]};
+    key <AD05>	{ [         t,          T,		asciitilde,     Tslash ]};
+    key <AC02>	{ [         s,          S,      braceleft,		U1E9E ]};
+    key <AC03>	{ [         d,          D,      bracketleft,    ETH ]};
+    key <AC04>	{ [         f,          F,      parenleft,		ordfeminine ]};
+    key <AC05>	{ [         g,          G,      less,	        ENG ]	};
+    key <AC06>	{ [         h,          H,      greater,	    Hstroke ]	};
+    key <AC07>	{ [         j,          J,		parenright,		dead_horn ] };
+    key <AC08>	{ [         k,          K,		bracketright,	ampersand ]	};
+    key <AC09>	{ [         l,          L,      braceright,		Lstroke ]};
+};
