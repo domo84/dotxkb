@@ -1,3 +1,23 @@
+# Currently:
+
+Edit /usr/share/X11/xkb/symbols/se directly.
+
+Custom programming mappings are defined in programmer file.
+Keep this file up to date with new mappings.
+This file is not read by any program.
+Copy/paste contents to the symbols/se file to the xkb_symbols "programmer" block.
+
+Also, before: include "se(programmer)" within the xkb_symbols "basic" block.
+
+Logging in and out seems neccessary.
+
+# ##############################
+# BELOW MIGHT BE TOO COMPLICATED
+# ##############################
+
+# I also suspect this is done automatically
+# somehow, somewhere
+
 # Custom mappings in ~/.xkb/symbols/programmer
 
 # Base the layout upon 'se'
